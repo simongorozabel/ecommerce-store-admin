@@ -36,7 +36,7 @@ const ProductPage: React.FC<ProductPageProps> = async ({ params }) => {
           <hr className="my-10" />
           <ProductList
             title="Related Items"
-            items={suggestedProducts.filter(
+            items={[suggestedProducts].filter(
               (suggestion: any) => suggestion.id !== product.id
             )}
           />
