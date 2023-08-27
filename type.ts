@@ -19,6 +19,8 @@ export interface Product {
   size: Size;
   color: Color;
   images: Image[];
+  length: () => void;
+  map: () => void;
 }
 
 export interface Image {

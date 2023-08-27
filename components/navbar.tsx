@@ -9,7 +9,7 @@ import NavbarActions from "./navbar-actions";
 export const revalidate = 0;
 
 const Navbar = async () => {
-  const categories = await getCategories();
+  const categories: any = await getCategories();
 
   return (
     <>
